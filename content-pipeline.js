@@ -9,7 +9,7 @@
  *   node content-pipeline.js
  * 
  * To run on a schedule, use cron or deploy to Railway/Render.
- */
+ *
 
 const axios = require("axios");
 const RSSParser = require("rss-parser");
@@ -27,7 +27,7 @@ const CONFIG = {
   openaiModel: "gpt-4o-mini",
 
   // Creatomate
-  creatomateApiKey: "44899e18d42b48b3b87ea83bdb9910db",
+    creatomateApiKey: process.env.CREATOMATE_API_KEY,
   creatomateTemplateId: "dced4557-2242-4e48-8061-e6b0644d4939",
 
   // Vizard
