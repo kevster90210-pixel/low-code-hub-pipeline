@@ -1,0 +1,16 @@
+{
+  "name": "low-code-hub-pipeline",
+  "version": "1.0.0",
+  "description": "Automated content pipeline: RSS → OpenAI → Creatomate → Vizard → YouTube",
+  "main": "content-pipeline.js",
+  "scripts": {
+    "start": "node content-pipeline.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "rss-parser": "^3.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
