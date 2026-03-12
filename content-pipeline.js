@@ -20,10 +20,10 @@ const fs = require("fs");
 // ─────────────────────────────────────────
 const CONFIG = {
   // RSS Feed
-  rssUrl: "YOUR_SHAREPOINT_RSS_URL_HERE", // e.g. https://yoursite.sharepoint.com/_layouts/15/feed.aspx
+  rssUrl: process.env.RSS_URL,
 
   // OpenAI
-  openaiApiKey: "YOUR_OPENAI_API_KEY_HERE",
+  openaiApiKey: process.env.OPENAI_API_KEY,
   openaiModel: "gpt-4o-mini",
 
   // Creatomate
